@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,24 @@ header {
     }
 }
 
+main{
+    padding: 2rem 15rem;
+    line-height: 4rem;
+    span.headings{
+        font-family: 'Josefin Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    span.tagline{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
+    img#mainContentImg{
+        width: 100%;
+    }
+}
+
 // 320px — 480px: Mobile devices
 // 481px — 768px: iPads, Tablets
 // 769px — 1024px: Small screens, laptops
@@ -49,11 +68,21 @@ header {
             }
         }
     }
+    main {
+        padding: 2rem 10rem;
+        line-height: 3.5rem;
+        span.headings{
+            font-size: 3rem;
+        }
+    }
 }
 
 // iPads, Tablets
 @media only screen and (max-width: 768px) {
     header {
+        padding: 2rem 5rem;
+    }
+    main {
         padding: 2rem 5rem;
     }
 }
@@ -70,5 +99,8 @@ header {
                 padding-left: 0.5rem;
             }
         }
+    }
+    main {
+        padding: 2rem 1.2rem;
     }
 }
