@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 15rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #searchBar {
+            border-radius: 1rem;
+            border: none;
+            background-color: #f8f7f7;
+            font-size: 1rem;
+            padding: 0.4rem 1rem;
+            width: 15rem;
+        }
+        #searchBar::placeholder {
+            color: #c0bebe;
+        }
+        #searchIcon {
+            padding-left: 1.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+// small screens, laptops
+@media only screen and (max-width: 1024px) {
+    header {
+        padding: 2rem 10rem;
+        nav {
+            #searchBar {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+// iPads, Tablets
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 2rem 5rem;
+    }
+}
+
+// Mobile Devices
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 2rem 1.2rem;
+        nav {
+            #searchBar {
+                width: 8rem;
+            }
+            #searchIcon {
+                padding-left: 0.5rem;
+            }
+        }
+    }
+}
