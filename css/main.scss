@@ -42,15 +42,17 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #e7e2e2;
+    background-color: #eeecec;
     height: 5rem;
     p{
+        text-align: center;
         font-weight: lighter;
         font-family: Roboto;
         font-size: 0.8rem;
     }
     img.socialMediaIcon{
-        width: 1.5rem;
+        width: 1rem;
+        padding-left: 0.7rem;
     }
 }
 
