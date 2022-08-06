@@ -11,7 +11,7 @@ header {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   position: -webkit-sticky;
   position: sticky;
-  background-color: #EFEDED;
+  background-color: #f8f7f7;
 }
 header nav {
   display: flex;
@@ -21,7 +21,7 @@ header nav {
 header nav #searchBar {
   border-radius: 1rem;
   border: none;
-  background-color: #f8f7f7;
+  background-color: #F1F1F1;
   font-size: 1rem;
   padding: 0.4rem 1rem;
   width: 15rem;
