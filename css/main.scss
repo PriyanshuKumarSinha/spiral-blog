@@ -47,6 +47,7 @@ footer{
     p{
         font-weight: lighter;
         font-family: Roboto;
+        font-size: 0.8rem;
     }
     img.socialMediaIcon{
         width: 1.5rem;
@@ -78,6 +79,15 @@ main{
 // 1025px — 1200px: Desktops, large screens
 // 1201px and more —  Extra large screens, TV
 
+
+@media only screen and (max-width: 1200px) {
+    footer{
+        padding: 0 10rem;
+        flex-direction: column;
+        height: 10rem;
+
+    }
+}
 // small screens, laptops
 @media only screen and (max-width: 1024px) {
     header {
@@ -105,6 +115,10 @@ main{
     main {
         padding: 2rem 5rem;
     }
+    footer{
+        padding: 0 5rem;
+        height: 12rem;
+    }
 }
 
 // Mobile Devices
@@ -122,5 +136,9 @@ main{
     }
     main {
         padding: 2rem 1.2rem;
+    }
+    footer{
+        padding: 0 1.2rem;
+        height: 12rem;
     }
 }
